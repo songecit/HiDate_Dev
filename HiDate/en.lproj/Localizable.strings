@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  HiDate
+
+  Created by qidangsong on 16/6/28.
+  Copyright © 2016年 HiDate. All rights reserved.
+*/
+
+
+"AuthorizeAlertWithCameraTitle" = "未获得授权使用相机";
+"AuthorizeAlertWithCameraBody" = "请到 设置>隐私>相机>HiDate 开启授权";
+"AuthorizeAlertWithPhotosTitle" = "未获得授权使用照片";
+"AuthorizeAlertWithPhotosBody" = "请到 设置>隐私>照片>HiDate 开启授权";
+
+"AuthorizeAlertWithLocationTitle" = "未获得授权使用定位服务";
+"AuthorizeAlertWithLocationBody" = "请到 设置>隐私>定位服务>HiDate 开启授权";
+
+
+// 统一的提示文案
+"AuthorizeAlertWithPhotosUnityBody" = "请到 设置>HiDate 允许访问照片和相机";
+
+"BaseWebviewVC_Title" = "";
+
+"LocalNotificationKeyWithSysInfo" = "sysinfo";
+"LocalNotificationKeyWithIMChat" = "IMChat";

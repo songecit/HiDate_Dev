@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HDShareViewController" customModule="HiDate" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomLineLayoutConstraint" destination="HOI-n3-CX7" id="tmf-nC-cN1"/>
+                <outlet property="buttonContentView" destination="Hcv-qm-3bP" id="ZzG-fb-Jtp"/>
+                <outlet property="buttonContentViewLeftLC" destination="RMm-Y0-54l" id="8Fi-KG-jR1"/>
+                <outlet property="buttonContentViewRightLC" destination="lx7-dB-ewR" id="eI2-rg-JNy"/>
+                <outlet property="cancelButton" destination="B8F-tV-wZh" id="Ywb-cT-UCM"/>
+                <outlet property="pengyouquanButton" destination="oU1-Oo-8oE" id="up6-Lv-4UQ"/>
+                <outlet property="qqButton" destination="YnW-mw-JMV" id="pcm-IB-Wpv"/>
+                <outlet property="shareContentView" destination="YH8-RR-Qyx" id="nMJ-dN-bPW"/>
+                <outlet property="shareContentViewBottomLC" destination="KR5-IW-ccz" id="TfA-aL-N2M"/>
+                <outlet property="sinaWeiboButton" destination="CE0-BK-4sG" id="MPv-oi-0Gp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wechatButton" destination="F2n-LL-huc" id="vF1-VK-ezt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIControl">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YH8-RR-Qyx">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hcv-qm-3bP">
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="nTc-tg-ZSe"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAb-c4-5sf">
+                            <color key="backgroundColor" red="0.1764705882352941" green="0.1764705882352941" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="HOI-n3-CX7"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8F-tV-wZh">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="u0F-g1-4wa"/>
+                            </constraints>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelButtonClicked:" destination="-1" eventType="touchUpInside" id="0C8-UL-Lju"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Hcv-qm-3bP" firstAttribute="top" secondItem="YH8-RR-Qyx" secondAttribute="top" constant="33" id="B0O-ZQ-9sI"/>
+                        <constraint firstItem="Hcv-qm-3bP" firstAttribute="leading" secondItem="YH8-RR-Qyx" secondAttribute="leading" constant="35" id="RMm-Y0-54l"/>
+                        <constraint firstItem="B8F-tV-wZh" firstAttribute="top" secondItem="MAb-c4-5sf" secondAttribute="bottom" id="UA2-59-yxq"/>
+                        <constraint firstAttribute="height" constant="180" id="Z95-Kw-ace"/>
+                        <constraint firstItem="B8F-tV-wZh" firstAttribute="leading" secondItem="YH8-RR-Qyx" secondAttribute="leading" id="kjJ-Ee-sVl"/>
+                        <constraint firstAttribute="trailing" secondItem="Hcv-qm-3bP" secondAttribute="trailing" constant="35" id="lx7-dB-ewR"/>
+                        <constraint firstAttribute="trailing" secondItem="B8F-tV-wZh" secondAttribute="trailing" id="m5p-Go-fVh"/>
+                        <constraint firstAttribute="trailing" secondItem="MAb-c4-5sf" secondAttribute="trailing" id="xP5-eD-gnL"/>
+                        <constraint firstAttribute="bottom" secondItem="B8F-tV-wZh" secondAttribute="bottom" id="yeE-Sc-lM5"/>
+                        <constraint firstItem="MAb-c4-5sf" firstAttribute="leading" secondItem="YH8-RR-Qyx" secondAttribute="leading" id="zMu-FE-Wdc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YH8-RR-Qyx" secondAttribute="bottom" constant="-180" id="KR5-IW-ccz"/>
+                <constraint firstItem="YH8-RR-Qyx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Naw-Dc-ZCb"/>
+                <constraint firstAttribute="trailing" secondItem="YH8-RR-Qyx" secondAttribute="trailing" id="RPX-qy-Jzc"/>
+            </constraints>
+            <connections>
+                <action selector="maskViewClicked:" destination="-1" eventType="touchDown" id="FIl-5T-ToA"/>
+            </connections>
+            <point key="canvasLocation" x="397.5" y="-240.5"/>
+        </view>
+        <button hidden="YES" opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="F2n-LL-huc">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+            <inset key="titleEdgeInsets" minX="-51" minY="0.0" maxX="0.0" maxY="-58"/>
+            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="19"/>
+            <state key="normal" title="微信" image="weixin_web">
+                <color key="titleColor" red="0.4431372549" green="0.4431372549" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            </state>
+            <state key="highlighted" image="weixin_pressed_web">
+                <color key="titleColor" red="0.75686274509803919" green="0.59999999999999998" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            </state>
+            <connections>
+                <action selector="shareButtonClicked:" destination="-1" eventType="touchUpInside" id="3lx-Ma-zTx"/>
+            </connections>
+            <point key="canvasLocation" x="238" y="197"/>
+        </button>
+        <button hidden="YES" opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oU1-Oo-8oE">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+            <inset key="titleEdgeInsets" minX="-51" minY="0.0" maxX="0.0" maxY="-58"/>
+            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="19"/>
+            <state key="normal" title="朋友圈" image="pengyouquan_web">
+                <color key="titleColor" red="0.4431372549" green="0.4431372549" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            </state>
+            <state key="highlighted" image="pengyouquan_pressed_web">
+                <color key="titleColor" red="0.75686274509803919" green="0.59999999999999998" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            </state>
+            <connections>
+                <action selector="shareButtonClicked:" destination="-1" eventType="touchUpInside" id="rFA-NE-oil"/>
+            </connections>
+            <point key="canvasLocation" x="346" y="197"/>
+        </button>
+        <button hidden="YES" opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YnW-mw-JMV">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+            <inset key="titleEdgeInsets" minX="-51" minY="0.0" maxX="0.0" maxY="-58"/>
+            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="19"/>
+            <state key="normal" title="QQ" image="qq_web">
+                <color key="titleColor" red="0.4431372549" green="0.4431372549" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            </state>
+            <state key="highlighted" image="qq_pressed_web">
+                <color key="titleColor" red="0.75686274509803919" green="0.59999999999999998" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            </state>
+            <connections>
+                <action selector="shareButtonClicked:" destination="-1" eventType="touchUpInside" id="Nib-Mt-h9v"/>
+            </connections>
+            <point key="canvasLocation" x="456" y="197"/>
+        </button>
+        <button hidden="YES" opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CE0-BK-4sG">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+            <inset key="titleEdgeInsets" minX="-51" minY="0.0" maxX="0.0" maxY="-58"/>
+            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="19"/>
+            <state key="normal" title="新浪微博" image="weibo_web">
+                <color key="titleColor" red="0.4431372549" green="0.4431372549" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            </state>
+            <state key="highlighted" image="weibo_pressed_web">
+                <color key="titleColor" red="0.75686274509803919" green="0.59999999999999998" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            </state>
+            <connections>
+                <action selector="shareButtonClicked:" destination="-1" eventType="touchUpInside" id="Ats-eA-2Qu"/>
+            </connections>
+            <point key="canvasLocation" x="556" y="197"/>
+        </button>
+    </objects>
+    <resources>
+        <image name="pengyouquan_pressed_web" width="50" height="50"/>
+        <image name="pengyouquan_web" width="50" height="50"/>
+        <image name="qq_pressed_web" width="50" height="50"/>
+        <image name="qq_web" width="50" height="50"/>
+        <image name="weibo_pressed_web" width="50" height="50"/>
+        <image name="weibo_web" width="50" height="50"/>
+        <image name="weixin_pressed_web" width="50" height="50"/>
+        <image name="weixin_web" width="50" height="50"/>
+    </resources>
+</document>

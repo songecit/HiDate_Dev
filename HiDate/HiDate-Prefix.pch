@@ -1,0 +1,30 @@
+//
+//  HiDate-Prefix.pch
+//  HiDate
+//
+//  Created by qidangsong on 16/6/27.
+//  Copyright © 2016年 HiDate. All rights reserved.
+//
+
+#ifndef HiDate_Prefix_pch
+#define HiDate_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef DEBUG
+#define HDLog( s, ... ) NSLog( @"<%@:(%d)> %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define HDLog(s, ...)
+#endif
+
+#import "CommonUtils.h"
+#import "HDColorDefine.h"
+#import "HDApiDefine.h"
+#import <libextobjc/EXTScope.h>
+#import "ViewControllerManager.h"
+#import "HDBaseDataController.h"
+#import "UIViewController+MainNavigation.h"
+#import "HDConstantDefine.h"
+
+#endif /* HiDate_Prefix_pch */
